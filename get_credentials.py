@@ -17,7 +17,7 @@ class MainWindow(QMainWindow):
     def __init__(self):
             super().__init__()
 
-            self.setWindowTitle("gusDB Credentials")
+            self.setWindowTitle("Credentials")
             self.resize(300,120)
 
             layout_Outer = QVBoxLayout()
