@@ -18,7 +18,8 @@ class MainWindow(QMainWindow):
             super().__init__()
 
             self.setWindowTitle("Credentials")
-            self.resize(300,120)
+            self.setMinimumSize(300,112)
+            self.setMaximumSize(300,112)
 
             layout_Outer = QVBoxLayout()
             layout_Inner_line1 = QHBoxLayout()
@@ -43,7 +44,7 @@ class MainWindow(QMainWindow):
             
             layout_Outer.addLayout(layout_Inner_line1)
             layout_Outer.addLayout(layout_Inner_line2)
-            layout_Outer.addWidget(self.button_Submit)
+            layout_Outer.addWidget(self.button_Submit, 0, Qt.AlignHCenter)
             
 
             widget = QWidget()
