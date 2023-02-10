@@ -25,10 +25,12 @@ class MainWindow(QMainWindow):
             layout_Inner_line2 = QHBoxLayout()
             
             self.edit_Username = QLineEdit()
+            self.edit_Username.setMaximumWidth(200)
             
             self.edit_Password = QLineEdit()
             self.edit_Password.setEchoMode(QLineEdit.Password)
             self.edit_Password.returnPressed.connect(self.submit_clicked)
+            self.edit_Password.setMaximumWidth(200)
             
             self.button_Submit = QPushButton("Submit")
             self.button_Submit.clicked.connect(self.submit_clicked)
